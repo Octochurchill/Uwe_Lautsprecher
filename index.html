@@ -1,16 +1,246 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uwe's Handgefertigte Lautsprecher</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header><h1>Uwe – Ingenieur und Lautsprecherbauer</h1></header>
-    <section><h2>Über Uwe</h2><p>Uwe ist ein pensionierter Ingenieur mit Patenten, engagiert und hilfsbereit.</p></section>
-    <section><h2>Die Lautsprecher</h2><p>Handgefertigt für Konzertqualität – immersives Hörerlebnis.</p></section>
-    <section><h2>Kontakt</h2><p>Interessiert? Email: <a href="mailto:uwe@example.com">uwe@example.com</a>.</p></section>
-    <footer><p>&copy; 2026</p></footer>
-</body>
-</html>
+ <!DOCTYPE html>                                                                                                                                                                      
+   <html lang="de">                                                                                                                                                                     
+   <head>                                                                                                                                                                               
+       <meta charset="UTF-8">                                                                                                                                                           
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                                                                           
+       <title>Uwe – Handgefertigte Lautsprecher</title>                                                                                                                                 
+       <script src="https://cdn.tailwindcss.com"></script>                                                                                                                              
+       <script>                                                                                                                                                                         
+           tailwind.config = {                                                                                                                                                          
+               theme: {                                                                                                                                                                 
+                   extend: {                                                                                                                                                            
+                       colors: {                                                                                                                                                        
+                           'creme': '#f8f5f0',                                                                                                                                          
+                           'wood': '#5C4033',                                                                                                                                           
+                           'engineer-blue': '#007BFF',                                                                                                                                  
+                       },                                                                                                                                                               
+                       fontFamily: {                                                                                                                                                    
+                           sans: ['Arial', 'sans-serif'],                                                                                                                               
+                       },                                                                                                                                                               
+                   }                                                                                                                                                                    
+               }                                                                                                                                                                        
+           }                                                                                                                                                                            
+       </script>                                                                                                                                                                        
+   </head>                                                                                                                                                                              
+   <body class="bg-creme text-gray-800 font-sans">                                                                                                                                      
+       <!-- Navbar -->                                                                                                                                                                  
+       <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">                                                                                                                  
+           <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">                                                                                                  
+               <a href="#" class="text-2xl font-bold text-wood">Uwe</a>                                                                                                                 
+               <div class="hidden md:flex space-x-6">                                                                                                                                   
+                   <a href="#start" class="hover:text-engineer-blue">Start</a>                                                                                                          
+                   <a href="#ueber-mich" class="hover:text-engineer-blue" >Über mich</a>                                                                                                
+                   <a href="#lautsprecher" class="hover:text-engineer-blue">Lautsprecher</a>                                                                                            
+                   <a href="#handwerk" class="hover:text-engineer-blue">Handwerk</a>                                                                                                    
+                   <a href="#galerie" class="hover:text-engineer-blue">Galerie</a>                                                                                                      
+                   <a href="#kontakt" class="hover:text-engineer-blue">Kontakt</a>                                                                                                      
+               </div>                                                                                                                                                                   
+               <button id="menu-btn" class="md:hidden text-wood focus:outline-none">                                                                                                    
+                   <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">                                                       
+                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>                                                        
+                   </svg>                                                                                                                                                               
+               </button>                                                                                                                                                                
+           </div>                                                                                                                                                                       
+           <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">                                                                                                           
+               <a href="#start" class="block px-4 py-2 hover:bg-creme">Start</a>                                                                                                        
+               <a href="#ueber-mich" class="block px-4 py-2 hover:bg-creme">Über mich</a>                                                                                               
+               <a href="#lautsprecher" class="block px-4 py-2 hover:bg-creme">Lautsprecher</a>                                                                                          
+               <a href="#handwerk" class="block px-4 py-2 hover:bg-creme">Handwerk</a>                                                                                                  
+               <a href="#galerie" class="block px-4 py-2 hover:bg-creme">Galerie</a>                                                                                                    
+               <a href="#kontakt" class="block px-4 py-2 hover:bg-creme">Kontakt</a>                                                                                                    
+           </div>                                                                                                                                                                       
+       </nav>                                                                                                                                                                           
+                                                                                                                                                                                        
+       <!-- Hero -->                                                                                                                                                                    
+       <section id="start" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image:                                           
+ url('https://via.placeholder.com/1920x1080?text=Altavoces+en+Taller');">                                                                                                               
+           <div class="absolute inset-0 bg-black opacity-30"></div>                                                                                                                     
+           <div class="relative z-10 max-w-4xl px-4">                                                                                                                                   
+               <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Handgefertigte Lautsprecher für echtes Konzertgefühl</h1>                                                     
+               <p class="text-xl md:text-3xl text-white mb-8">Präzision, Leidenschaft und Klang, der berührt – von einem Ingenieur mit Herz.</p>                                        
+               <a href="#lautsprecher" class="bg-engineer-blue text-white py-3 px-6 rounded-lg text-lg hover:bg-wood transition">Meine Modelle entdecken</a>                            
+           </div>                                                                                                                                                                       
+       </section>                                                                                                                                                                       
+                                                                                                                                                                                        
+       <!-- Über Uwe -->                                                                                                                                                                
+       <section id="ueber-mich" class="py-20 max-w-7xl mx-auto px-4">                                                                                                                   
+           <div class="flex flex-col md:flex-row items-center">                                                                                                                         
+               <img src="https://via.placeholder.com/600x600?text=Uwe" alt="Uwe" class="w-full md:w-1/3 rounded-lg shadow-lg mb-8 md:mb-0 md:mr-8">                                     
+               <div>                                                                                                                                                                    
+                   <h2 class="text-4xl font-bold text-wood mb-4">Über Uwe</h2>                                                                                                          
+                   <p class="text-xl leading-relaxed">Als pensionierter Ingenieur mit mehreren Patenten habe ich meine Karriere der Präzision und Innovation gewidmet. Nun, im          
+ Ruhestand, habe ich meine Leidenschaft für Audio entdeckt. Jeder Lautsprecher ist ein Stück meiner Ingenieurskunst – handgefertigt mit Sorgfalt und Wissen. Ich bin engagiert und      
+ hilfsbereit, immer bereit, anderen zu helfen, das perfekte Klangerlebnis zu finden. Die Rente ist für mich ein neuer Anfang, in dem ich meine Fähigkeiten teile und Freude             
+ schenke.</p>                                                                                                                                                                           
+               </div>                                                                                                                                                                   
+           </div>                                                                                                                                                                       
+       </section>                                                                                                                                                                       
+                                                                                                                                                                                        
+       <!-- Lautsprecher -->                                                                                                                                                            
+       <section id="lautsprecher" class="py-20 bg-creme">                                                                                                                               
+           <div class="max-w-7xl mx-auto px-4">                                                                                                                                         
+               <h2 class="text-4xl font-bold text-wood mb-12 text-center">Unsere Lautsprecher</h2>                                                                                      
+               <div class="grid grid-cols-1 md:grid-cols-3 gap-8">                                                                                                                      
+                   <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition">                                                                               
+                       <img src="https://via.placeholder.com/400x300?text=Classic" alt="Classic" class="w-full">                                                                        
+                       <div class="p-6">                                                                                                                                                
+                           <h3 class="text-2xl font-bold mb-2">Classic</h3>                                                                                                             
+                           <p>Hohe Präzision, warmer Klang. Specs: 2-Wege, 8 Ohm, 90 dB.</p>                                                                                            
+                           <button onclick="openModal('classic')" class="mt-4 bg-engineer-blue text-white py-2 px-4 rounded hover:bg-wood">Mehr erfahren</button>                       
+                       </div>                                                                                                                                                           
+                   </div>                                                                                                                                                               
+                   <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition">                                                                               
+                       <img src="https://via.placeholder.com/400x300?text=Studio" alt="Studio" class="w-full">                                                                          
+                       <div class="p-6">                                                                                                                                                
+                           <h3 class="text-2xl font-bold mb-2">Studio</h3>                                                                                                              
+                           <p>Professionelle Qualität für Studios. Specs: 3-Wege, 4 Ohm, 92 dB.</p>                                                                                     
+                           <button onclick="openModal('studio')" class="mt-4 bg-engineer-blue text-white py-2 px-4 rounded hover:bg-wood">Mehr erfahren</button>                        
+                       </div>                                                                                                                                                           
+                   </div>                                                                                                                                                               
+                   <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition">                                                                               
+                       <img src="https://via.placeholder.com/400x300?text=Immerse" alt="Immerse" class="w-full">                                                                        
+                       <div class="p-6">                                                                                                                                                
+                           <h3 class="text-2xl font-bold mb-2">Immerse</h3>                                                                                                             
+                           <p>Immersiver Klang für Zuhause. Specs: 2.5-Wege, 6 Ohm, 88 dB.</p>                                                                                          
+                           <button onclick="openModal('immerse')" class="mt-4 bg-engineer-blue text-white py-2 px-4 rounded hover:bg-wood">Mehr erfahren</button>                       
+                       </div>                                                                                                                                                           
+                   </div>                                                                                                                                                               
+               </div>                                                                                                                                                                   
+           </div>                                                                                                                                                                       
+       </section>                                                                                                                                                                       
+                                                                                                                                                                                        
+       <!-- Handwerk -->                                                                                                                                                                
+       <section id="handwerk" class="py-20 max-w-7xl mx-auto px-4">                                                                                                                     
+           <h2 class="text-4xl font-bold text-wood mb-12 text-center">Die Handwerkskunst</h2>                                                                                           
+           <div class="grid grid-cols-1 md:grid-cols-4 gap-8">                                                                                                                          
+               <div class="text-center">                                                                                                                                                
+                   <div class="bg-wood text-white p-4 rounded-full mb-4 mx-auto w-16 h-16 flex items-center justify-center">1</div>                                                     
+                   <h3 class="text-xl font-bold">Ingenieurplanung</h3>                                                                                                                  
+                   <p>Präzise Berechnungen und Patente für optimalen Klang.</p>                                                                                                         
+               </div>                                                                                                                                                                   
+               <div class="text-center">                                                                                                                                                
+                   <div class="bg-wood text-white p-4 rounded-full mb-4 mx-auto w-16 h-16 flex items-center justify-center">2</div>                                                     
+                   <h3 class="text-xl font-bold">Holzselektion</h3>                                                                                                                     
+                   <p>Ausgewähltes Holz für Resonanz und Ästhetik.</p>                                                                                                                  
+               </div>                                                                                                                                                                   
+               <div class="text-center">                                                                                                                                                
+                   <div class="bg-wood text-white p-4 rounded-full mb-4 mx-auto w-16 h-16 flex items-center justify-center">3</div>                                                     
+                   <h3 class="text-xl font-bold">Montage</h3>                                                                                                                           
+                   <p>Handgefertigt mit Sorgfalt in meinem Werkstatt.</p>                                                                                                               
+               </div>                                                                                                                                                                   
+               <div class="text-center">                                                                                                                                                
+                   <div class="bg-wood text-white p-4 rounded-full mb-4 mx-auto w-16 h-16 flex items-center justify-center">4</div>                                                     
+                   <h3 class="text-xl font-bold">Hörtest</h3>                                                                                                                           
+                   <p>Persönliche Prüfung für perfektes Konzertgefühl.</p>                                                                                                              
+               </div>                                                                                                                                                                   
+           </div>                                                                                                                                                                       
+       </section>                                                                                                                                                                       
+                                                                                                                                                                                        
+       <!-- Galerie -->                                                                                                                                                                 
+       <section id="galerie" class="py-20 bg-creme">                                                                                                                                    
+           <div class="max-w-7xl mx-auto px-4">                                                                                                                                         
+               <h2 class="text-4xl font-bold text-wood mb-12 text-center">Galerie</h2>                                                                                                  
+               <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">                                                                                                       
+                   <img src="https://via.placeholder.com/300?text=Galerie1" alt="Galerie" class="w-full rounded-lg hover:scale-105 transition">                                         
+                   <img src="https://via.placeholder.com/300?text=Galerie2" alt="Galerie" class="w-full rounded-lg hover:scale-105 transition">                                         
+                   <img src="https://via.placeholder.com/300?text=Galerie3" alt="Galerie" class="w-full rounded-lg hover:scale-105 transition">                                         
+                   <img src="https://via.placeholder.com/300?text=Galerie4" alt="Galerie" class="w-full rounded-lg hover:scale-105 transition">                                         
+                   <img src="https://via.placeholder.com/300?text=Galerie5" alt="Galerie" class="w-full rounded-lg hover:scale-105 transition">                                         
+                   <img src="https://via.placeholder.com/300?text=Galerie6" alt="Galerie" class="w-full rounded-lg hover:scale-105 transition">                                         
+                   <img src="https://via.placeholder.com/300?text=Galerie7" alt="Galerie" class="w-full rounded-lg hover:scale-105 transition">                                         
+                   <img src="https://via.placeholder.com/300?text=Galerie8" alt="Galerie" class="w-full rounded-lg hover:scale-105 transition">                                         
+               </div>                                                                                                                                                                   
+           </div>                                                                                                                                                                       
+       </section>                                                                                                                                                                       
+                                                                                                                                                                                        
+       <!-- Kundenstimmen -->                                                                                                                                                           
+       <section class="py-20 max-w-7xl mx-auto px-4">                                                                                                                                   
+           <h2 class="text-4xl font-bold text-wood mb-12 text-center">Kundenstimmen</h2>                                                                                                
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">                                                                                                                          
+               <div class="bg-white p-6 rounded-lg shadow-lg">                                                                                                                          
+                   <p>"Der Klang ist wie in einem Konzertsaal – beeindruckend!" – Anna M.</p>                                                                                           
+               </div>                                                                                                                                                                   
+               <div class="bg-white p-6 rounded-lg shadow-lg">                                                                                                                          
+                   <p>"Uwes Präzision macht den Unterschied. Absolute Empfehlung." – Thomas K.</p>                                                                                      
+               </div>                                                                                                                                                                   
+               <div class="bg-white p-6 rounded-lg shadow-lg">                                                                                                                          
+                   <p>"Handwerk auf höchstem Niveau, mit Herz gebaut." – Lena S.</p>                                                                                                    
+               </div>                                                                                                                                                                   
+           </div>                                                                                                                                                                       
+       </section>                                                                                                                                                                       
+                                                                                                                                                                                        
+       <!-- Kontakt -->                                                                                                                                                                 
+       <section id="kontakt" class="py-20 bg-creme">                                                                                                                                    
+           <div class="max-w-3xl mx-auto px-4">                                                                                                                                         
+               <h2 class="text-4xl font-bold text-wood mb-8 text-center">Kontakt</h2>                                                                                                   
+               <form id="contact-form" class="space-y-4">                                                                                                                               
+                   <input type="text" placeholder="Name" class="w-full p-4 border rounded-lg">                                                                                          
+                   <input type="email" placeholder="Email" class="w-full p-4 border rounded-lg">                                                                                        
+                   <input type="text" placeholder="Betreff" class="w-full p-4 border rounded-lg">                                                                                       
+                   <textarea placeholder="Nachricht" class="w-full p-4 border rounded-lg h-32"></textarea>                                                                              
+                   <button type="button" onclick="submitForm()" class="bg-engineer-blue text-white py-3 px-6 rounded-lg w-full hover:bg-wood transition">Senden</button>                
+               </form>                                                                                                                                                                  
+               <p id="form-message" class="hidden text-center mt-4 text-green-600">Nachricht gesendet!</p>                                                                              
+           </div>                                                                                                                                                                       
+       </section>                                                                                                                                                                       
+                                                                                                                                                                                        
+       <!-- Footer -->                                                                                                                                                                  
+       <footer class="py-6 text-center bg-wood text-white">                                                                                                                             
+           <p>&copy; 2026 Uwe's Handgefertigte Lautsprecher – Mit Leidenschaft gebaut in Deutschland</p>                                                                                
+           <p>Email: <a href="mailto:uwe@example.com" class="text-creme hover:underline">uwe@example.com</a></p>                                                                        
+       </footer>                                                                                                                                                                        
+                                                                                                                                                                                        
+       <!-- Modals -->                                                                                                                                                                  
+       <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">                                                                       
+           <div class="bg-white p-8 rounded-lg max-w-lg w-full relative">                                                                                                               
+               <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-600">X</button>                                                                                   
+               <h3 id="modal-title" class="text-2xl font-bold mb-4"></h3>                                                                                                               
+               <p id="modal-content" class="text-lg"></p>                                                                                                                               
+           </div>                                                                                                                                                                       
+       </div>                                                                                                                                                                           
+                                                                                                                                                                                        
+       <script>                                                                                                                                                                         
+           // Mobile menu                                                                                                                                                               
+           document.getElementById('menu-bt n').addEventListener('click', () => {                                                                                                       
+               document.getElementById('mobile- menu').classList.toggle('hidden' );                                                                                                     
+           });                                                                                                                                                                          
+                                                                                                                                                                                        
+           // Smooth scroll                                                                                                                                                             
+           document.querySelectorAll('a[hre f^="#"]').forEach(anchor => {                                                                                                               
+               anchor.addEventListener('click', function (e) {                                                                                                                          
+                   e.preventDefault();                                                                                                                                                  
+                   document.querySelector(this.getA ttribute('href')).scrollIntoView ({ behavior: 'smooth' });                                                                          
+               });                                                                                                                                                                      
+           });                                                                                                                                                                          
+                                                                                                                                                                                        
+           // Modals                                                                                                                                                                    
+           function openModal(model) {                                                                                                                                                  
+               const title = document.getElementById('modal-t itle');                                                                                                                   
+               const content = document.getElementById('modal-c ontent');                                                                                                               
+               if (model === 'classic') {                                                                                                                                               
+                   title.textContent = 'Classic Modell';                                                                                                                                
+                   content.textContent = 'Detaillierte Specs: 2-Wege-System, Frequenzbereich 40-20kHz, handgefertigt aus Eichenholz für warmen Klang. Ideal für Wohnzimmer.';           
+               } else if (model === 'studio') {                                                                                                                                         
+                   title.textContent = 'Studio Modell';                                                                                                                                 
+                   content.textContent = 'Detaillierte Specs: 3-Wege-System, Frequenzbereich 30-22kHz, professionelle Komponenten für Studioqualität. Perfekt für Musikproduktion.';    
+               } else if (model === 'immerse') {                                                                                                                                        
+                   title.textContent = 'Immerse Modell';                                                                                                                                
+                   content.textContent = 'Detaillierte Specs: 2.5-Wege-System, Frequenzbereich 35-21kHz, immersiver Raumklang. Für ein echtes Konzerterlebnis zu Hause.';               
+               }                                                                                                                                                                        
+               document.getElementById('modal') .classList.remove('hidden');                                                                                                            
+           }                                                                                                                                                                            
+           function closeModal() {                                                                                                                                                      
+               document.getElementById('modal') .classList.add('hidden');                                                                                                               
+           }                                                                                                                                                                            
+                                                                                                                                                                                        
+           // Form submit                                                                                                                                                               
+           function submitForm() {                                                                                                                                                      
+               document.getElementById('form-me ssage').classList.remove('hidden ');                                                                                                    
+               setTimeout(() => {                                                                                                                                                       
+                   document.getElementById('form-me ssage').classList.add('hidden');                                                                                                    
+               }, 3000);                                                                                                                                                                
+               document.getElementById('contact -form').reset();                                                                                                                        
+           }                                                                                                                                                                            
+       </script>                                                                                                                                                                        
+   </body>                                                                                                                                                                              
+   </html>                  
